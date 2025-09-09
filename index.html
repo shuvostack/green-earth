@@ -90,237 +90,63 @@
           </h1>
         </div>
 
-
         <!-- cart parent -->
-        <div class="flex space-x-5">
+        <div class="md:flex space-y-3 md:space-x-5">
           <!-- categories parent-->
-          <div id="categories-container" class="space-y-2">
+          <div class="space-y-2">
             <!-- categories title -->
             <div>
               <p class="font-bold">Categories</p>
             </div>
-            <div class="">
-              <ul class="flex flex-col gap-2">
-                <li
-                  class="btn btn-outline btn-primary border-none text-[#1F2937] hover:bg-[#15803D] hover:text-white w-[170px] h-[30px]"
-                >
-                  <a class="w-full text-left">All Trees</a>
-                </li>
-                <li
-                  class="btn btn-outline btn-primary border-none text-[#1F2937] hover:bg-[#15803D] hover:text-white w-[170px] h-[30px]"
-                >
-                  <a class="w-full text-left">All Trees</a>
-                </li>
-                <li
-                  class="btn btn-outline btn-primary border-none text-[#1F2937] hover:bg-[#15803D] hover:text-white w-[170px] h-[30px]"
-                >
-                  <a class="w-full text-left">All Trees</a>
-                </li>
-                <li
-                  class="btn btn-outline btn-primary border-none text-[#1F2937] hover:bg-[#15803D] hover:text-white w-[170px] h-[30px]"
-                >
-                  <a class="w-full text-left">All Trees</a>
-                </li>
-                <li
-                  class="btn btn-outline btn-primary border-none text-[#1F2937] hover:bg-[#15803D] hover:text-white w-[170px] h-[30px]"
-                >
-                  <a class="w-full text-left">All Trees</a>
-                </li>
-                <li
-                  class="btn btn-outline btn-primary border-none text-[#1F2937] hover:bg-[#15803D] hover:text-white w-[170px] h-[30px]"
-                >
-                  <a class="w-full text-left">All Trees</a>
-                </li>
-                <li
-                  class="btn btn-outline btn-primary border-none text-[#1F2937] hover:bg-[#15803D] hover:text-white w-[170px] h-[30px]"
-                >
-                  <a class="w-full text-left">All Trees</a>
-                </li>
-                <li
-                  class="btn btn-outline btn-primary border-none text-[#1F2937] hover:bg-[#15803D] hover:text-white w-[170px] h-[30px]"
-                >
-                  <a class="w-full text-left">All Trees</a>
-                </li>
-                <li
-                  class="btn btn-outline btn-primary border-none text-[#1F2937] hover:bg-[#15803D] hover:text-white w-[170px] h-[30px]"
-                >
-                  <a class="w-full text-left">All Trees</a>
-                </li>
-                <li
-                  class="btn btn-outline btn-primary border-none text-[#1F2937] hover:bg-[#15803D] hover:text-white w-[170px] h-[30px]"
-                >
-                  <a class="w-full text-left">All Trees</a>
-                </li>
-                <li
-                  class="btn btn-outline btn-primary border-none text-[#1F2937] hover:bg-[#15803D] hover:text-white w-[170px] h-[30px]"
-                >
-                  <a class="w-full text-left">All Trees</a>
-                </li>
-              </ul>
-            </div>
+            <!-- All Trees Button -->
+            <li
+              id="all-tree-btn"
+              class="btn btn-outline btn-primary border-none text-[#1F2937] hover:bg-[#15803D] hover:text-white w-[170px] h-[30px]"
+            >
+              <a
+                id="all-trees-button"
+                onclick="allTreesButton()"
+                class="w-full text-left"
+                >All Trees</a
+              >
+            </li>
+            <div id="categories-container" class=""></div>
           </div>
 
           <!-- all cards -->
-          <div id="cards-container" class="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div
+            id="cards-container"
+            class="grid grid-cols-1 md:grid-cols-3 gap-5"
+          >
             <!-- card -->
-            <div class="card bg-base-100 w-70  shadow-sm">
+            <div class="card bg-base-100 w-70 shadow-sm">
               <!-- cart image -->
               <figure class="px-4 pt-4">
                 <img
                   src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                  class="rounded-lg"
+                  class="rounded-lg w-[50%]"
                   alt="Shoes"
                 />
               </figure>
               <!-- cart text -->
               <div class="card-body">
-                <h2 class="card-title">
-                  Mango Tree
-                </h2>
+                <h2 class="card-title">Mango Tree</h2>
                 <p>
-                  A fast-growing tropical tree that produces delicious, juicy mangoes during summer. Its dense green
+                  A fast-growing tropical tree that produces delicious, juicy
+                  mangoes during summer. Its dense green
                 </p>
                 <div class="card-actions justify-between">
-                  <div class="badge badge-outline border-none bg-[#DCFCE7] text-[#15803D]">Fruit Tree</div>
+                  <div
+                    class="badge badge-outline border-none bg-[#DCFCE7] text-[#15803D]"
+                  >
+                    Fruit Tree
+                  </div>
                   <div class="font-bold text-lg">৳ <span>500</span></div>
                 </div>
                 <!-- cart button -->
-                <button class="w-full btn bg-[#15803D] text-white rounded-3xl">Add to Cart</button>
-              </div>
-            </div>
-
-            <!-- card -->
-            <div class="card bg-base-100 w-70  shadow-sm">
-              <!-- cart image -->
-              <figure class="px-4 pt-4">
-                <img
-                  src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                  class="rounded-lg"
-                  alt="Shoes"
-                />
-              </figure>
-              <!-- cart text -->
-              <div class="card-body">
-                <h2 class="card-title">
-                  Mango Tree
-                </h2>
-                <p>
-                  A fast-growing tropical tree that produces delicious, juicy mangoes during summer. Its dense green
-                </p>
-                <div class="card-actions justify-between">
-                  <div class="badge badge-outline border-none bg-[#DCFCE7] text-[#15803D]">Fruit Tree</div>
-                  <div class="font-bold text-lg">৳ <span>500</span></div>
-                </div>
-                <!-- cart button -->
-                <button class="w-full btn bg-[#15803D] text-white rounded-3xl">Add to Cart</button>
-              </div>
-            </div>
-
-            <!-- card -->
-            <div class="card bg-base-100 w-70  shadow-sm">
-              <!-- cart image -->
-              <figure class="px-4 pt-4">
-                <img
-                  src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                  class="rounded-lg"
-                  alt="Shoes"
-                />
-              </figure>
-              <!-- cart text -->
-              <div class="card-body">
-                <h2 class="card-title">
-                  Mango Tree
-                </h2>
-                <p>
-                  A fast-growing tropical tree that produces delicious, juicy mangoes during summer. Its dense green
-                </p>
-                <div class="card-actions justify-between">
-                  <div class="badge badge-outline border-none bg-[#DCFCE7] text-[#15803D]">Fruit Tree</div>
-                  <div class="font-bold text-lg">৳ <span>500</span></div>
-                </div>
-                <!-- cart button -->
-                <button class="w-full btn bg-[#15803D] text-white rounded-3xl">Add to Cart</button>
-              </div>
-            </div>
-
-            <!-- card -->
-            <div class="card bg-base-100 w-70  shadow-sm">
-              <!-- cart image -->
-              <figure class="px-4 pt-4">
-                <img
-                  src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                  class="rounded-lg"
-                  alt="Shoes"
-                />
-              </figure>
-              <!-- cart text -->
-              <div class="card-body">
-                <h2 class="card-title">
-                  Mango Tree
-                </h2>
-                <p>
-                  A fast-growing tropical tree that produces delicious, juicy mangoes during summer. Its dense green
-                </p>
-                <div class="card-actions justify-between">
-                  <div class="badge badge-outline border-none bg-[#DCFCE7] text-[#15803D]">Fruit Tree</div>
-                  <div class="font-bold text-lg">৳ <span>500</span></div>
-                </div>
-                <!-- cart button -->
-                <button class="w-full btn bg-[#15803D] text-white rounded-3xl">Add to Cart</button>
-              </div>
-            </div>
-
-            <!-- card -->
-            <div class="card bg-base-100 w-70  shadow-sm">
-              <!-- cart image -->
-              <figure class="px-4 pt-4">
-                <img
-                  src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                  class="rounded-lg"
-                  alt="Shoes"
-                />
-              </figure>
-              <!-- cart text -->
-              <div class="card-body">
-                <h2 class="card-title">
-                  Mango Tree
-                </h2>
-                <p>
-                  A fast-growing tropical tree that produces delicious, juicy mangoes during summer. Its dense green
-                </p>
-                <div class="card-actions justify-between">
-                  <div class="badge badge-outline border-none bg-[#DCFCE7] text-[#15803D]">Fruit Tree</div>
-                  <div class="font-bold text-lg">৳ <span>500</span></div>
-                </div>
-                <!-- cart button -->
-                <button class="w-full btn bg-[#15803D] text-white rounded-3xl">Add to Cart</button>
-              </div>
-            </div>
-
-            <!-- card -->
-            <div class="card bg-base-100 w-70  shadow-sm">
-              <!-- cart image -->
-              <figure class="px-4 pt-4">
-                <img
-                  src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                  class="rounded-lg"
-                  alt="Shoes"
-                />
-              </figure>
-              <!-- cart text -->
-              <div class="card-body">
-                <h2 class="card-title">
-                  Mango Tree
-                </h2>
-                <p>
-                  A fast-growing tropical tree that produces delicious, juicy mangoes during summer. Its dense green
-                </p>
-                <div class="card-actions justify-between">
-                  <div class="badge badge-outline border-none bg-[#DCFCE7] text-[#15803D]">Fruit Tree</div>
-                  <div class="font-bold text-lg">৳ <span>500</span></div>
-                </div>
-                <!-- cart button -->
-                <button class="w-full btn bg-[#15803D] text-white rounded-3xl">Add to Cart</button>
+                <button class="w-full btn bg-[#15803D] text-white rounded-3xl">
+                  Add to Cart
+                </button>
               </div>
             </div>
           </div>
@@ -328,40 +154,166 @@
           <!-- your cart -->
           <div class="bg-white rounded-xl w-40 p-2">
             <div>
-                <h2 class="font-semibold text-lg">Your Cart</h2>
+              <h2 class="font-semibold text-lg">Your Cart</h2>
             </div>
 
             <!-- total added cart -->
-            <div class="mt-2 border-b space-y-2 py-2">
-                <!-- cart -->
-                <div class="bg-[#F0FDF4] p-2 rounded-lg flex justify-between items-center">
-                    <div>
-                        <h2 class="font-semibold">Mango Tree</h2>
-                        <p class="text-[#1F2937]">৳<span>500</span> x <span>1</span></p>
-                    </div>
-
-                    <i class="fa-solid fa-xmark"></i>
+            <div id="cart-items" class="mt-2 border-b space-y-2 py-2">
+              <!-- cart -->
+              <div
+                class="bg-[#F0FDF4] p-2 rounded-lg flex justify-between items-center"
+              >
+                <div>
+                  <h2 class="font-semibold">Mango Tree</h2>
+                  <p class="text-[#1F2937]">
+                    ৳<span>500</span> x <span>1</span>
+                  </p>
                 </div>
 
-                <!-- cart -->
-                <div class="bg-[#F0FDF4] p-2 rounded-lg flex justify-between items-center">
-                    <div>
-                        <h2 class="font-semibold">Mango Tree</h2>
-                        <p class="text-[#1F2937]">৳<span>500</span> x <span>1</span></p>
-                    </div>
+                <i class="fa-solid fa-xmark"></i>
+              </div>
 
-                    <i class="fa-solid fa-xmark"></i>
+              <!-- cart -->
+              <div
+                class="bg-[#F0FDF4] p-2 rounded-lg flex justify-between items-center"
+              >
+                <div>
+                  <h2 class="font-semibold">Mango Tree</h2>
+                  <p class="text-[#1F2937]">
+                    ৳<span>500</span> x <span>1</span>
+                  </p>
                 </div>
+
+                <i class="fa-solid fa-xmark"></i>
+              </div>
             </div>
 
             <!-- total money -->
             <div class="flex justify-between">
-                <p class="font-semibold">Total</p>
-                <p>৳<span>1000</span></p>
+              <p class="font-semibold">Total</p>
+              <p>৳<span id="cart-total">1000</span></p>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- About the Campaign section -->
+    <section class="mt-16">
+      <!-- about title -->
+      <div class="text-center">
+        <h1 class="font-semibold text-2xl">About the Campaign</h1>
+      </div>
+
+      <!-- about parent -->
+      <div
+        class="md:flex items-center space-y-5 md:space-x-8 w-8/12 mx-auto mt-8"
+      >
+        <!-- about image -->
+        <div>
+          <img src="./assets/about.png" class="w-100" alt="" />
+        </div>
+
+        <!-- about text -->
+        <div class="w-10/12">
+          <p>
+            Green Earth is a global tree plantation initiative dedicated to
+            fighting climate change. Since our start, we’ve planted over 500,000
+            trees worldwide. By joining our campaign, you help restore forests,
+            create habitats for wildlife, and combat global warming.
+          </p>
+          <div class="mt-4">
+            <li>Restoration of natural habitats</li>
+            <li>Improvement of air quality</li>
+            <li>Support for local communities</li>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Impact section -->
+    <section class="bg-[#CFF0DC] mt-16 text-center">
+      <div class="py-8">
+        <h1 class="text-[#1F2937] font-semibold text-2xl">Our Impact</h1>
+      </div>
+
+      <!-- impact card -->
+      <div
+        class="md:flex space-y-4 md:space-x-5 w-9/12 md:w-11/12 mx-auto justify-center pb-10"
+      >
+        <!-- card 1 -->
+        <div class="bg-white w-80 md:w-90 p-4 rounded-xl">
+          <h1 class="font-semibold text-2xl text-[#15803D]">500K+</h1>
+          <p class="text-sm">Trees Planted</p>
+        </div>
+        <!-- card 2 -->
+        <div class="bg-white w-80 md:w-90 p-4 rounded-xl">
+          <h1 class="font-semibold text-2xl text-[#15803D]">120K+</h1>
+          <p class="text-sm">Communities Involved</p>
+        </div>
+        <!-- card 3 -->
+        <div class="bg-white w-80 md:w-90 p-4 rounded-xl">
+          <h1 class="font-semibold text-2xl text-[#15803D]">30K+</h1>
+          <p class="text-sm">Countries Reached</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Plant a Tree today section -->
+    <section class="bg-[#166534] text-center pb-10">
+      <div class="py-6">
+        <h1 class="text-white font-semibold text-2xl p-5">
+          Plant a Tree Today
+        </h1>
+      </div>
+
+      <div
+        class="bg-[#15803D] max-w-[400px] max-h-[500px] mx-auto rounded-lg shadow-lg"
+      >
+        <fieldset
+          class="flex flex-col justify-center items-center gap-3 w-[400px] mx-auto p-8"
+        >
+          <input type="text" class="input" placeholder="Your Name" />
+          <input type="email" class="input" placeholder="Your Email Address" />
+          <select class="select">
+            <option disabled selected>Number of Trees</option>
+            <option>Crimson</option>
+            <option>Amber</option>
+            <option>Velvet</option>
+          </select>
+          <a
+            class="btn rounded-4xl border-none text-[#15803D] bg-[#FACC15] w-full"
+            >Donate Now</a
+          >
+        </fieldset>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <footer class="bg-[#14532D] text-center">
+      <p class="text-white p-5 text-sm">
+        © 2025 Green Earth. All Rights Reserved.
+      </p>
+    </footer>
+
+    <!-- Open the modal using ID.showModal() method -->
+    <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+
+    <dialog id="card_modal" class="modal modal-bottom sm:modal-middle">
+      <div class="modal-box">
+        <div id="modal-container" class="space-y-2">
+         
+        </div>
+        <div class="modal-action">
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn">Close</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+
+    <script src="./script/index.js"></script>
+    <script src="./script/challange.js"></script>
   </body>
 </html>

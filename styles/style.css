@@ -1,0 +1,15 @@
+.active {
+  display: inline-flex; 
+  align-items: center; 
+  justify-content: center; 
+  font-weight: 500; 
+  border: none; 
+  background-color: #15803D; 
+  color: white; 
+  width: 180px; 
+  height: 30px; 
+  text-align: left;
+  border-radius: 0.2rem; 
+  cursor: pointer; 
+  transition: all 0.2s ease-in-out; 
+}
