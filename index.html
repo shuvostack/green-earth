@@ -90,8 +90,12 @@
           </h1>
         </div>
 
-        <!-- cart parent -->
-        <div class="md:flex space-y-3 md:space-x-5">
+        <section id="spinner" class="flex justify-center items-center py-10 hidden">
+          <span class="loading loading-spinner loading-xl"></span>
+        </section>
+
+        <!-- card parent -->
+        <div id="card-parent" class="md:flex space-y-3 md:space-x-5">
           <!-- categories parent-->
           <div class="space-y-2">
             <!-- categories title -->
@@ -110,7 +114,9 @@
                 >All Trees</a
               >
             </li>
-            <div id="categories-container" class=""></div>
+            <div id="categories-container" class="">
+
+            </div>
           </div>
 
           <!-- all cards -->
@@ -118,80 +124,30 @@
             id="cards-container"
             class="grid grid-cols-1 md:grid-cols-3 gap-5"
           >
-            <!-- card -->
-            <div class="card bg-base-100 w-70 shadow-sm">
-              <!-- cart image -->
-              <figure class="px-4 pt-4">
-                <img
-                  src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                  class="rounded-lg w-[50%]"
-                  alt="Shoes"
-                />
-              </figure>
-              <!-- cart text -->
-              <div class="card-body">
-                <h2 class="card-title">Mango Tree</h2>
-                <p>
-                  A fast-growing tropical tree that produces delicious, juicy
-                  mangoes during summer. Its dense green
-                </p>
-                <div class="card-actions justify-between">
-                  <div
-                    class="badge badge-outline border-none bg-[#DCFCE7] text-[#15803D]"
-                  >
-                    Fruit Tree
-                  </div>
-                  <div class="font-bold text-lg">৳ <span>500</span></div>
-                </div>
-                <!-- cart button -->
-                <button class="w-full btn bg-[#15803D] text-white rounded-3xl">
-                  Add to Cart
-                </button>
+            
+            
               </div>
-            </div>
-          </div>
 
-          <!-- your cart -->
-          <div class="bg-white rounded-xl w-40 p-2">
-            <div>
-              <h2 class="font-semibold text-lg">Your Cart</h2>
-            </div>
+
+            <!-- your cart -->
+            <div class="bg-white rounded-xl w-40 p-2">
+              <div>
+                <h2 class="font-semibold text-lg">Your Cart</h2>
+              </div>
 
             <!-- total added cart -->
-            <div id="cart-items" class="mt-2 border-b space-y-2 py-2">
-              <!-- cart -->
-              <div
-                class="bg-[#F0FDF4] p-2 rounded-lg flex justify-between items-center"
-              >
-                <div>
-                  <h2 class="font-semibold">Mango Tree</h2>
-                  <p class="text-[#1F2937]">
-                    ৳<span>500</span> x <span>1</span>
-                  </p>
-                </div>
-
-                <i class="fa-solid fa-xmark"></i>
+              <div id="cart-items" class="mt-2 border-b space-y-2 py-2">
+                <!-- cart -->
+                
               </div>
-
-              <!-- cart -->
-              <div
-                class="bg-[#F0FDF4] p-2 rounded-lg flex justify-between items-center"
-              >
-                <div>
-                  <h2 class="font-semibold">Mango Tree</h2>
-                  <p class="text-[#1F2937]">
-                    ৳<span>500</span> x <span>1</span>
-                  </p>
-                </div>
-
-                <i class="fa-solid fa-xmark"></i>
-              </div>
-            </div>
 
             <!-- total money -->
-            <div class="flex justify-between">
-              <p class="font-semibold">Total</p>
-              <p>৳<span id="cart-total">1000</span></p>
+              <div class="flex justify-between">
+                <p class="font-semibold">Total</p>
+                <p>৳<span id="total-price">1000</span></p>
+              </div>
+          </div>
+
             </div>
           </div>
         </div>

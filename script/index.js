@@ -1,9 +1,22 @@
 const loadCategories = () => {
+  manageSpinner(true);
   const url = "https://openapi.programming-hero.com/api/categories";
   fetch(url)
     .then((res) => res.json())
     .then((json) => displayLoadCategories(json.categories));
 };
+
+const manageSpinner = (status) => {
+  if (status === true) {
+    document.getElementById('spinner').classList.remove('hidden');
+    document.getElementById('card-parent').classList.add('hidden');
+  }
+
+  else {
+    document.getElementById('card-parent').classList.remove('hidden');
+    document.getElementById('spinner').classList.add('hidden');
+  }
+}
 
 // {
 //     "id": 4,
@@ -19,6 +32,7 @@ const removeActive = () => {
 
 
 const loadCategory = (id) => {
+  manageSpinner(true);
   const url = `https://openapi.programming-hero.com/api/category/${id}`;
   fetch(url)
     .then((res) => res.json())
@@ -111,7 +125,7 @@ const displayLoadTreeCards = (cards) => {
                   <div class="font-bold text-lg">৳ <span>${card.price}</span></div>
                 </div>
                 <!-- cart button -->
-                <button class="w-full btn bg-[#15803D] text-white rounded-3xl">
+                <button onclick="addToCart(${card.id}, '${card.name}', ${card.price})" class="w-full btn bg-[#15803D] text-white rounded-3xl">
                   Add to Cart
                 </button>
               </div>
@@ -120,6 +134,7 @@ const displayLoadTreeCards = (cards) => {
 
     cardsContainer.append(cardDiv);
   });
+  manageSpinner(false);
 };
 
 const displayLoadCategories = (categories) => {
@@ -144,6 +159,7 @@ const displayLoadCategories = (categories) => {
 
     categoriesContainer.append(btnUl);
   });
+  manageSpinner(false);
 };
 
 const loadTreeCards = () => {
